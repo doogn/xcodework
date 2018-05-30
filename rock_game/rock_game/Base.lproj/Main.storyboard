@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rock_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper.png" translatesAutoresizingMaskIntoConstraints="NO" id="cSR-gn-3JL">
+                                <rect key="frame" x="112.5" y="50" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3N2-Ks-3Ob"/>
+                                    <constraint firstAttribute="height" constant="150" id="JpG-Xo-dJs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper.png" translatesAutoresizingMaskIntoConstraints="NO" id="nJP-j1-7Tu">
+                                <rect key="frame" x="112" y="220" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Bhz-3U-VuV"/>
+                                    <constraint firstAttribute="height" constant="150" id="GbF-Ia-6pR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가위 바위 보 게임" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scq-9E-gnI">
+                                <rect key="frame" x="20" y="470" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k5E-t3-QCJ">
+                                <rect key="frame" x="20" y="530.5" width="335" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5q-fN-0mK">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="30"/>
+                                        <color key="backgroundColor" red="0.13243346324884597" green="0.19038153040522382" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="가위">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQi-iX-PXJ">
+                                        <rect key="frame" x="111.5" y="0.0" width="112" height="30"/>
+                                        <color key="backgroundColor" red="0.66666668653488159" green="0.17628666633164797" blue="0.33294952936927585" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="바위">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piP-tb-1X2">
+                                        <rect key="frame" x="223.5" y="0.0" width="111.5" height="30"/>
+                                        <color key="backgroundColor" red="0.17819039917346835" green="0.42049870466321249" blue="0.18857222324526274" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="보">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMT-c2-Upq">
+                                <rect key="frame" x="172" y="400" width="30" height="30"/>
+                                <state key="normal" title="준비"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nJP-j1-7Tu" firstAttribute="top" secondItem="cSR-gn-3JL" secondAttribute="bottom" constant="20" id="059-Di-mCy"/>
+                            <constraint firstItem="Scq-9E-gnI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="42o-pd-J8X"/>
+                            <constraint firstItem="Scq-9E-gnI" firstAttribute="top" secondItem="yMT-c2-Upq" secondAttribute="bottom" constant="40" id="7Rn-5V-9R5"/>
+                            <constraint firstItem="k5E-t3-QCJ" firstAttribute="top" secondItem="Scq-9E-gnI" secondAttribute="bottom" constant="40" id="8P3-6g-4xC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k5E-t3-QCJ" secondAttribute="trailing" constant="20" id="9B9-6y-AXi"/>
+                            <constraint firstItem="cSR-gn-3JL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="CsC-NQ-4Xz"/>
+                            <constraint firstItem="k5E-t3-QCJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rtl-Z4-xmi"/>
+                            <constraint firstItem="Scq-9E-gnI" firstAttribute="top" secondItem="nJP-j1-7Tu" secondAttribute="bottom" constant="60" id="SsL-m8-Gcp"/>
+                            <constraint firstItem="yMT-c2-Upq" firstAttribute="top" secondItem="nJP-j1-7Tu" secondAttribute="bottom" constant="30" id="dQl-Ad-yy3"/>
+                            <constraint firstItem="cSR-gn-3JL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ea8-Mn-L9o"/>
+                            <constraint firstItem="nJP-j1-7Tu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hb6-2C-NvN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Scq-9E-gnI" secondAttribute="trailing" constant="20" id="rFJ-nR-fb2"/>
+                            <constraint firstItem="yMT-c2-Upq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sBJ-Dk-zhj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper.png" width="450" height="450"/>
+    </resources>
+</document>
